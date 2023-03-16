@@ -315,6 +315,8 @@ def sortBooksByYear(catalog, year, rank):
         # ordenando la lista
         sorted_list = sa.sort(books_year, compareratings)
         ranked_list = lt.subList(sorted_list, 1, rank)
+    
+    print(ranked_list)
 
     return ranked_list
 
